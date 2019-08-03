@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 const Display = ({ counter }) => <div> {counter} </div> //arrow function version and destructured prop.
-const Button = (props) => (
-  <button onClick={props.onClick}>
-    {props.text}
+const Button = ({onClick,text}) => (
+  <button onClick={onClick}>
+    {text}
   </button>
 )
 const App = props => {
